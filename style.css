@@ -114,6 +114,48 @@ nav a.active {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.hero-summary {
+  max-width: 760px;
+  margin: 24px 0 28px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+}
+
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-facts li {
+  min-width: 180px;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero-facts strong,
+.hero-facts span {
+  display: block;
+}
+
+.hero-facts strong {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d8ecff;
+}
+
+.hero-facts span {
+  margin-top: 4px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
 .hero-actions {
   display: flex;
   gap: 14px;
@@ -186,6 +228,67 @@ main > .content-grid {
 
 .card.highlight {
   background: linear-gradient(180deg, #ffffff, var(--accent));
+}
+
+.organization-band {
+  margin: 18px 0 24px;
+  padding: 34px 0 38px;
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.organization-band h2 {
+  margin-bottom: 10px;
+}
+
+.sponsor-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 28px;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.sponsor-logo {
+  display: flex;
+  min-height: 164px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.sponsor-logo img {
+  width: auto;
+  max-width: 252px;
+  max-height: 154px;
+  object-fit: contain;
+}
+
+.sponsor-logo .logo-yili {
+  max-width: 216px;
+  max-height: 144px;
+}
+
+.sponsor-logo .logo-sjtu {
+  max-width: 264px;
+  max-height: 154px;
+}
+
+.sponsor-logo .logo-hunan {
+  max-width: 208px;
+  max-height: 150px;
+}
+
+.sponsor-logo .logo-wuhan {
+  max-width: 218px;
+  max-height: 152px;
+}
+
+.sponsor-logo .logo-westlake {
+  max-width: 450px;
+  max-height: 280px;
 }
 
 h2 {
@@ -338,10 +441,57 @@ footer p {
     min-height: 460px;
   }
 
+  .organization-band {
+    padding: 28px 0 32px;
+  }
+
+  .organization-band h2 {
+    margin-bottom: 10px;
+  }
+
   .content-grid,
   .organizers-grid,
   .date-grid {
     grid-template-columns: 1fr;
+  }
+
+  .sponsor-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .sponsor-logo {
+    min-height: 124px;
+  }
+
+  .sponsor-logo img {
+    max-width: 176px;
+    max-height: 112px;
+  }
+
+  .sponsor-logo .logo-yili {
+    max-width: 168px;
+    max-height: 112px;
+  }
+
+  .sponsor-logo .logo-sjtu {
+    max-width: 184px;
+    max-height: 116px;
+  }
+
+  .sponsor-logo .logo-hunan {
+    max-width: 158px;
+    max-height: 112px;
+  }
+
+  .sponsor-logo .logo-wuhan {
+    max-width: 168px;
+    max-height: 114px;
+  }
+
+  .sponsor-logo .logo-westlake {
+    max-width: 226px;
+    max-height: 142px;
   }
 
   .organizer-card {
