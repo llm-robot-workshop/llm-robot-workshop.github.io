@@ -498,3 +498,55 @@ footer p {
     flex-direction: column;
   }
 }
+
+.talk-card h3 {
+  margin: 26px 0 8px;
+  color: var(--primary-dark);
+}
+
+.talk-header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.talk-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.section-label {
+  margin: 0 0 8px;
+  color: var(--primary);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+
+.speaker-name {
+  margin: 12px 0 2px;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.speaker-affiliation {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (max-width: 680px) {
+  .talk-header {
+    grid-template-columns: 1fr;
+  }
+
+  .talk-photo {
+    width: 132px;
+    height: 132px;
+  }
+}
