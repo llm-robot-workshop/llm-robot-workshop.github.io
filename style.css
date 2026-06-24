@@ -348,6 +348,46 @@ table {
   border-radius: 12px;
 }
 
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.schedule-table {
+  min-width: 820px;
+}
+
+.schedule-table th:first-child,
+.schedule-table td:first-child {
+  width: 140px;
+  white-space: nowrap;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.schedule-table th:nth-child(2),
+.schedule-table td:nth-child(2) {
+  width: 150px;
+  font-weight: 800;
+}
+
+.schedule-table th:nth-child(3),
+.schedule-table td:nth-child(3) {
+  width: 190px;
+}
+
+.schedule-special td {
+  background: #f8fbff;
+}
+
+.schedule-break td {
+  background: #fff7e8;
+}
+
+.schedule-poster td {
+  background: #eef8f1;
+}
+
 th,
 td {
   border: 1px solid var(--border);
