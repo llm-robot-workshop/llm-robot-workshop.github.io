@@ -354,7 +354,7 @@ table {
 }
 
 .schedule-table {
-  min-width: 820px;
+  min-width: 940px;
 }
 
 .schedule-table th:first-child,
@@ -373,7 +373,24 @@ table {
 
 .schedule-table th:nth-child(3),
 .schedule-table td:nth-child(3) {
-  width: 190px;
+  width: 260px;
+}
+
+.schedule-speaker-name,
+.schedule-speaker-affiliation {
+  display: block;
+}
+
+.schedule-speaker-name {
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.schedule-speaker-affiliation {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
 }
 
 .schedule-special td {
