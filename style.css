@@ -376,18 +376,14 @@ table {
   width: 260px;
 }
 
-.schedule-speaker-name,
-.schedule-speaker-affiliation {
-  display: block;
-}
-
 .schedule-speaker-name {
   font-weight: 800;
   color: var(--primary-dark);
 }
 
 .schedule-speaker-affiliation {
-  margin-top: 4px;
+  display: inline-block;
+  margin-top: 6px;
   color: var(--muted);
   font-size: 13px;
   line-height: 1.35;
